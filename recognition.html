@@ -7,31 +7,91 @@
 
     <!-- Arquivos de estilos -->
     <link rel="icon" type="png" href="src/assets/favicon.png">
+    <link rel="stylesheet" href="src/css/bootstrap.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Arquivos de script -->
-    <script src="src/js/script.js"></script>
-    <script src="src/js/recognition.js"></script>
+    <script src="src/js/script.js" defer></script>
+    <script src="src/js/recognition.js" defer></script>
+    <script src="src/js/popper.js" defer></script>
+    <script src="src/js/bootstrap.js" defer></script>
+
+    <script src="" defer></script>
 
     <title>Speech WEB - Reconhecimento</title>
 </head>
 <body>
     
-    <div class="breadcrumbs">
-        <span><a href="index.html">Home</a></span>
-        <span class="disabled">Reconhecimento</span>
+    <div class="container-md">
+
+        <div class="breadcrumbs">
+            <span><a href="index.html">Home</a></span>
+            <i class="material-icons">chevron_right</i>
+            <span class="disabled">Reconhecimento</span>
+        </div>
+
+        <main>
+            <h1>WEB Speech</h1>
+            <h2>Reconhecimento</h2>
+            <p>
+                Aqui é a função é simples, basta habilitar o microfone e começar a falar, conforme você for falando, ele armazenará o texto nesse campo abaixo, vamos lá!
+            </p>
+        </main>
+
+        <textarea class="form-control" data-js="speech-textarea"></textarea>
+        
+        <div class="d-flex mt-2">
+            <div data-js="controllers">
+                <button data-js="start" type="button" class="me-2 btn btn-primary btn-sm btn-icon">
+                    <i class="large material-icons">keyboard_voice</i>
+                    Iniciar gravação
+                </button>
+                <button data-js="stop" type="button" class="me-2 d-none btn btn-danger btn-sm btn-icon">
+                    <i class="large material-icons">stop</i>
+                    Finalizar gravação
+                </button>
+            </div>
+            <div class="d-flex">
+                <button data-js="clear" type="button" class="me-2 btn btn-primary btn-sm btn-icon">
+                    <i class="large material-icons">restore_page</i>
+                    Limpar texto
+                </button>
+                <button data-js="download" type="button" class="me-2 btn btn-primary btn-sm btn-icon">
+                    <i class="large material-icons">file_download</i>
+                    Download
+                </button>
+            </div>
+        </div>
+
     </div>
 
-    <main>
-        <h1>WEB Speech</h1>
-        <h2>Reconhecimento</h2>
-        <p>
-            Aqui é a função é simples, basta habilitar o microfone e começar a falar, conforme você for falando, ele armazenará o texto nesse campo abaixo, vamos lá!
-        </p>
-    </main>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastErrorDownload" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">Erro ao baixar arquivo!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Não seria melhor digitar algo antes de tentar baixar 🤨?
+          </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastClear" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">Tudo limpo!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Bem melhor que <code>Control A</code> + <code>Del</code>😁?
+          </div>
+        </div>
+    </div>
 
 </body>
 </html>
