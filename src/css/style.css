@@ -27,6 +27,12 @@ textarea {
     justify-content: center;
 }
 
+.btn-lang {
+    cursor: pointer;
+    margin-right: .5rem;
+    width: 2rem;
+}
+
 .breadcrumbs {
     margin: 1rem auto;
     display: flex;

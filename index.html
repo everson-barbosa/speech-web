@@ -6,34 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Arquivos de estilos -->
-    <link rel="icon" type="png" href="src/assets/favicon.png">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" type="png" href="/src/assets/favicon.png">
+    <link rel="stylesheet" href="/src/css/bootstrap.css">
+    <link rel="stylesheet" href="/src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Arquivos de script -->
-    <script src="src/js/script.js"></script>
+    <script src="/src/js/script.js" defer></script>
+    <script src="/src/js/popper.js" defer></script>
+    <script src="/src/js/bootstrap.js" defer></script>
 
     <title>Speech WEB</title>
 </head>
 <body>
 
-    <div class="breadcrumbs">
-        <span class="disabled">Home</span>
+    <div class="container-md">
+
+        <div class="breadcrumbs">
+            <span class="disabled">Home</span>
+        </div>
+        
+        <main>
+            <h1 class="mb-3">WEB Speech</h1>
+            <p>
+                É um conjunto de funcionalidades disponibilizado pelo navegador que nos permite fazer duas coisas: transformar a entrada de voz pelo microfone em um texto e sintetizar voz através de um texto.<br />
+                Selecione o que deseja fazer
+            </p>
+            <a href="recognition.html">Reconhecimento</a>
+            <a href="synthesis.html">Sintetizador</a>
+        </main>
+
     </div>
-    
-    <main>
-        <h1>WEB Speech</h1>
-        <h2>O que é WEB Speech?</h2>
-        <p>
-            É um conjunto de funcionalidades disponibilizado pelo navegador que nos permite fazer duas coisas: transformar a entrada de voz pelo microfone em um texto e sintetizar voz através de um texto.<br />
-            Selecione o que deseja fazer
-        </p>
-        <a href="/recognition.html">Reconhecimento</a>
-        <a href="/synthesis.html">Sintetizador</a>
-    </main>
     
 </body>
 </html>

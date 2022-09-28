@@ -19,6 +19,7 @@ const SpeechToText = () => {
     speechAPI.onresult = e => { 
         textarea.value += e.results[e.resultIndex][0].transcript
     }
+
     return speechAPI
 }
 

@@ -6,32 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Arquivos de estilos -->
-    <link rel="icon" type="png" href="src/assets/favicon.png">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" type="png" href="/src/assets/favicon.png">
+    <link rel="stylesheet" href="/src/css/bootstrap.css">
+    <link rel="stylesheet" href="/src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Arquivos de script -->
-    <script src="src/js/script.js"></script>
-    <script src="src/js/synthesis.js"></script>
+    <script src="/src/js/script.js" defer></script>
+    <script src="/src/js/synthesis.js" defer></script>
+    <script src="/src/js/popper.js" defer></script>
+    <script src="/src/js/bootstrap.js" defer></script>
 
     <title>Speech WEB - Sintetizador</title>
 </head>
 <body>
 
-    <div class="breadcrumbs">
-        <span><a href="index.html">Home</a></span>
-        <span class="disabled">Sintetizador</span>
+    <div class="container-md">
+
+        <div class="breadcrumbs">
+            <span><a href="index.html">Home</a></span>
+            <i class="material-icons">chevron_right</i>
+            <span class="disabled">Sintetizador</span>
+        </div>
+        <main>
+            <h1>WEB Speech</h1>
+            <h2>Sintetizador</h2>
+            <p>
+                O sintetizador funciona assim, digite o texto que você quer que seja falado e aperte o botão, o navegador começara a sintetizar o aúdio.
+            </p>
+        </main>
+
     </div>
-    <main>
-        <h1>WEB Speech</h1>
-        <h2>Sintetizador</h2>
-        <p>
-            O sintetizador funciona assim, digite o texto que você quer que seja falado e aperte o botão, o navegador começara a sintetizar o aúdio.
-        </p>
-    </main>
     
 </body>
 </html>
